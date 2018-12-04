@@ -87,8 +87,8 @@ void run() {
     auto io_duration = duration_cast<microseconds>(t_io - t_start).count();
     auto all_duration = duration_cast<microseconds>(t_end - t_start).count();
 
-    std::cout << answer << " in " << all_duration << "ms (io: "
-              << io_duration << "ms)" << std::endl;
+    std::cout << answer << " in " << all_duration << "us (io: "
+              << io_duration << "us)" << std::endl;
 }
 
 int main() {
